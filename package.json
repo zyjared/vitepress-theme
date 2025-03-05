@@ -1,0 +1,62 @@
+{
+  "name": "@zyjared/vitepress-theme",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@10.4.0",
+  "author": "zyj <zyjared@outlook.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zyjared/vitepress-theme.git"
+  },
+  "keywords": [
+    "vitepress",
+    "vitepress-theme"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./config": {
+      "types": "./dist/node/config.d.ts",
+      "default": "./dist/node/config.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "build": "rimraf dist && vue-tsc --noEmit && tsc && node scripts/build",
+    "release": "bumpp && pnpm publish"
+  },
+  "peerDependencies": {
+    "markdown-it-mathjax3": "^4.3.2",
+    "vitepress": "^1.6.3",
+    "vue": "^3.5.13"
+  },
+  "dependencies": {
+    "@tsparticles/slim": "^3.8.1",
+    "@tsparticles/vue3": "^3.0.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.2.1",
+    "@tsparticles/engine": "^3.8.1",
+    "bumpp": "^10.0.3",
+    "eslint": "^9.20.1",
+    "fs-extra": "^11.3.0",
+    "rimraf": "^6.0.1",
+    "tinyglobby": "^0.2.11",
+    "vitepress": "^1.6.3",
+    "vue": "^3.5.13",
+    "vue-tsc": "^2.2.2"
+  }
+}
