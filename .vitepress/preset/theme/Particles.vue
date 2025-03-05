@@ -98,14 +98,15 @@ const { Layout } = DefaultTheme
   }
 }
 
+.curtain,
 .is-home ~ .VPFooter,
 .VPLocalNav,
-
+.VPNavBar:has(.home.top),
 .VPNavBar:not(.home.top) .content-body {
   background-color: unset !important;
 }
 
-.VPSidebar .curtain,
+.VPNavBar:not(.home.top),
 .VPLocalNav .container {
   background-color: var(--vp-nav-bg-color);
   backdrop-filter: blur(2px);

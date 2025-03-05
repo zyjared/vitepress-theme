@@ -10,7 +10,7 @@ export const config = defineConfig({
   description: 'zyjared',
   lang: 'zh-CN',
   head: [
-    ['link', { rel: 'icon', href: 'favicon.png', type: 'image/png' }],
+    // ['link', { rel: 'icon', href: 'favicon.png', type: 'image/png' }],
   ],
   appearance: 'dark',
   lastUpdated: true,
@@ -23,7 +23,7 @@ export const config = defineConfig({
     // siteTitle: false,
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/zyjared' },
+    //   { icon: 'github', link: 'https://github.com/zyjared' },
     ],
 
     footer: {},

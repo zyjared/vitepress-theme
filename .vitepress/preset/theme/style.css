@@ -2,7 +2,7 @@
  * @see https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
  */
 
- :root {
+:root {
   --vp-c-bg-soft: #f6f6f7dd;
   --vp-c-bg-alt: #f6f6f7aa;
 
@@ -24,37 +24,7 @@
 
 
 /*
- * nav
- * -------------------------------- */
-.VPNavBarTitle .logo {
-  border-radius: 50%;
-}
-
-.dark .VPDocAside .outline-marker {
-  background-color: #ffffff;
-}
-
-
-/*
- * sidebar
- * -------------------------------- */
-.VPSidebar::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-}
-
-.VPSidebar::-webkit-scrollbar-thumb {
-  border-radius: 2.5px;
-  background-color: var(--vp-c-divider);
-}
-
-.dark .VPSidebar::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #52f0f588, #505ef988);
-}
-
-
-/*
- * barder
+ * border
  * -------------------------------- */
 .dark .prev-next,
 .dark .group+.group,
@@ -160,6 +130,36 @@
   background-image: none;
   background-color: var(--vp-c-bg);
 }
+
+/*
+ * nav
+ * -------------------------------- */
+.VPNavBarTitle .logo {
+  border-radius: 50%;
+}
+
+.dark .VPDocAside .outline-marker {
+  background-color: #ffffff;
+}
+
+
+/*
+ * sidebar
+ * -------------------------------- */
+.VPSidebar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.VPSidebar::-webkit-scrollbar-thumb {
+  border-radius: 2.5px;
+  background-color: var(--vp-c-divider);
+}
+
+.dark .VPSidebar::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #52f0f588, #505ef988);
+}
+
 
 
 /*
