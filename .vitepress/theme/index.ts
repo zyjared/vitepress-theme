@@ -1,3 +1,3 @@
-import Theme from '../preset/theme/particles'
+import Theme from '../preset/theme'
 
 export default Theme

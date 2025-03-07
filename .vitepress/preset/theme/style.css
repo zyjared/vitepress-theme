@@ -142,7 +142,6 @@
   background-color: #ffffff;
 }
 
-
 /*
  * sidebar
  * -------------------------------- */
@@ -160,12 +159,19 @@
   background: linear-gradient(135deg, #52f0f588, #505ef988);
 }
 
-
-
 /*
  * home
  * -------------------------------- */
 
 .dark .VPHomeHero h1.name .clip {
   filter: drop-shadow(0 0 10px var(--linear-gradient-bg));
+}
+
+/*
+ * home
+* -------------------------------- */
+.vp-footer-separator {
+  display: inline-block;
+  margin: 0 0.5em;
+  font-weight: bold;
 }

@@ -1,9 +1,8 @@
-import type { Engine } from '@tsparticles/engine'
 import type { Theme as ThemeType } from 'vitepress'
 import { loadSlim } from '@tsparticles/slim'
 
 import Particles from '@tsparticles/vue3'
-import Layout from './Particles.vue'
+import Layout from './Layout.vue'
 
 import './style.css'
 
@@ -13,7 +12,7 @@ export default {
     // @ts-expect-error-error
     if (!import.meta.env.SSR) {
       app.use(Particles, {
-        init: async (engine: Engine) => {
+        init: async (engine) => {
           return await loadSlim(engine)
         },
       })

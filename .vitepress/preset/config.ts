@@ -26,7 +26,20 @@ export const config = defineConfig({
     //   { icon: 'github', link: 'https://github.com/zyjared' },
     ],
 
-    footer: {},
+    footer: {
+      message: [
+        '3D Model from',
+        '<a href="https://sketchfab.com/slang107123456789" target="_blank" title="seth the yutyrannus">seth</a>',
+        'on',
+        '<a href="https://sketchfab.com" target="_blank">Sketchfab</a>',
+
+        // vitepress
+        '<span class="vp-footer-separator">·</span>',
+        'Built with',
+        '<a href="https://vitepress.dev" target="_blank">VitePress</a>',
+      ].join(' '),
+      copyright: 'Copyright © 2024-present zyjared',
+    },
 
     editLink: {
       pattern: 'https://github.com/zyjared/vitepress-theme/edit/main/pages/:path',
